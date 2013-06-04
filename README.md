@@ -6,6 +6,7 @@
 * [Jade Templates](http://jade-lang.com/) 
 * [MochaJS](http://visionmedia.github.com/mocha/) _testing_
 * [SinonJS](http://sinonjs.org/) _testing_
+* [FirebirdSql] ([https://npmjs.org/package/node-firebird ) npm install node-firebird
 
 I'm using it to seed new web apps, and as a playground for quickly trying new things.
 
