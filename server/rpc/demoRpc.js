@@ -6,20 +6,22 @@ exports.actions = function (req, res, ss) {
   req.use('session');
 
   // use foo middleware
-  req.use('demoMiddleware.foobar');
+  //1 req.use('demoMiddleware.foobar');
+ //req.use('demoFirebird.foobarfb');
+    req.use('demoFirebird.dataconnect');
 
   // stupid mock date we return
-  var foos = [
-    { firstname: 'foo', lastname: 'jones' },
-    { firstname: 'jiminy', lastname: 'rickets' }
-  ];
+      var foos = [
+     { firstname: 'foo', lastname: 'jones' },
+     { firstname: 'jiminy', lastname: 'rickets' }
+     ];
 
   return {
 
     // call in client like ss.rpc('foo.get', function (err, obj) {});
     get: function () {
 
-      console.log("here's what foo middleware has to say: " + req.foobar);
+      console.log("midd here's what foo middleware has to say: " + req.dataconnect);//foobarfb);
 
       // standard res(err, obj)
       //   err: an error if it occurred, else null

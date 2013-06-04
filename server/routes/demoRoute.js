@@ -25,7 +25,7 @@ var route = (function () {
      *   
      * @param  {Object} app ExpressJS app
      * @param  {Object} ss  SocketStream object
-     */
+     */      //     ,database
     init: function (app, ss) {
 
       this.ss = ss;
@@ -43,6 +43,7 @@ var route = (function () {
         ss.api.publish.all('foo:bar', 'foo:bar was called');
 
         return res.json({response: "you just got foo'd"});
+
       });
     }
   };

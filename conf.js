@@ -1,6 +1,6 @@
 module.exports = {
 
   webServer: {
-    port: 3000
+    port: 3002
   }
 };
